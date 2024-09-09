@@ -1,9 +1,9 @@
 <?php
 require_once('./../layouts/navbar.php');
 ?>
-<!-- Accueil body -->
+<!-- Cartes body -->
 <h1>Tableau des divisions</h1>
-<!-- Accueil body -->
+<!-- Cartes body -->
 
 <?php
 require_once('./../layouts/footer.php');

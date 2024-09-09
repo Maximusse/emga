@@ -72,8 +72,8 @@ if (isset($_POST) && isset($_POST['usermail']) && isset($_POST['userpass'])) {
                     $type_q = "SELECT * FROM type_users WHERE id = $type_id";
                     $type_data = $pdo->query($type_q);
                     $type = $type_data->fetch(PDO::FETCH_ASSOC);
-                    $_SESSION["useretype"] = $role['libelle_types'];
-                    $_SESSION["useretypeid"] = $role['id'];
+                    $_SESSION["useretype"] = $type['libelle_types'];
+                    $_SESSION["useretypeid"] = $type['id'];
 
                     // Récupération des données personnelles
                     $pers_q = "SELECT * FROM personnels WHERE id = $pers_id";

@@ -1,9 +1,9 @@
 <?php
 require_once('./../layouts/navbar.php');
 ?>
-<!-- Accueil body -->
+<!-- User body -->
 <h1>Utilisateurs</h1>
-<!-- Accueil body -->
+<!-- User body -->
 
 <?php
 require_once('./../layouts/footer.php');
