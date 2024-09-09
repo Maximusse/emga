@@ -2,7 +2,7 @@
 require_once('./../layouts/navbar.php');
 ?>
 <!-- Accueil body -->
-<h1>Utilisateurs</h1>
+<h1>Accueil</h1>
 <!-- Accueil body -->
 
 <?php

@@ -19,8 +19,8 @@ if ($_SESSION["useretypeid"] != 1) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $_GET['title'] ?> | EMGA APP</title>
-    <link rel="stylesheet" href="./../style/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./../style/style.css">
+    <link rel="stylesheet" href="./../../style/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../../style/style.css">
 </head>
 
 <body>
@@ -34,10 +34,10 @@ if ($_SESSION["useretypeid"] != 1) {
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="#">Accueil</a>
+                            <a class="nav-link " aria-current="page" href="./../accueil/accueil.php?title=Accueil">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">Utilisateurs</a>
+                            <a class="nav-link " href="./../../dorh/users/user_liste.php?title=Utilisateurs">Utilisateurs</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="#">Cartes d'accès</a>
@@ -50,7 +50,7 @@ if ($_SESSION["useretypeid"] != 1) {
                                 <?= $_SESSION['useremail'] ?>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item link-danger" href="./../logout.php">Déconnexion</a></li>
+                                <li><a class="dropdown-item link-danger" href="./../../logout.php">Déconnexion</a></li>
                             </ul>
                         </li>
                     </ul>

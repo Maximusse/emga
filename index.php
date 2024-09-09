@@ -9,7 +9,7 @@ define('MESTRE_USER', 3);
 // Filtre pour vérifier l'etat de la session
 if (isset($_SESSION["loggedin"])) {
     if ($_SESSION["useretypeid"] == DORH_USER) {
-        header("location: ./dorh/accueil.php");
+        header("location: ./dorh/accueil/accueil.php");
     }
     exit;
 }
@@ -51,7 +51,6 @@ if (isset($_POST) && isset($_POST['usermail']) && isset($_POST['userpass'])) {
                 $row = $stmt->fetch();
                 $hashed_password = $row["password"];
                 if (password_verify($pwd, $hashed_password)) { // Vérification du mot de passe
-                    echo "okoko";
 
                     $_SESSION["loggedin"] = true;
                     $_SESSION["userid"] = $row['id'];
@@ -85,7 +84,7 @@ if (isset($_POST) && isset($_POST['usermail']) && isset($_POST['userpass'])) {
 
                     // Redirection vers la page d'accueil en fonction du type d'utilisateur
                     if ($type_id == DORH_USER) {
-                        header("location: ./dorh/accueil.php?title=Accueil");
+                        header("location: ./dorh/accueil/accueil.php?title=Accueil");
                     }
                 } else {
                     $erreur_pwd = "Mot de passe incorrect";
