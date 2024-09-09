@@ -2,12 +2,12 @@
 session_start();
 
 if (!isset($_SESSION["loggedin"])) {
-    header("location: ./../index.php");
+    header("location: ./../../index.php");
     exit;
 }
 
 if ($_SESSION["useretypeid"] != 1) {
-    header("location: ./../forbidden.php");
+    header("location: ./../../forbidden.php");
     exit;
 }
 
