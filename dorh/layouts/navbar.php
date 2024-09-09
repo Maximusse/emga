@@ -40,7 +40,7 @@ if ($_SESSION["useretypeid"] != 1) {
                             <a class="nav-link " href="./../../dorh/users/user_liste.php?title=Utilisateurs">Utilisateurs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">Cartes d'accès</a>
+                            <a class="nav-link " href="./../../dorh/cartes/divisions_tbl.php?title=Cartes d'accès">Cartes d'accès</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="#">Personnels</a>
