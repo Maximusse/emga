@@ -21,6 +21,11 @@ if ($_SESSION["useretypeid"] != 1) {
     <title><?= $_GET['title'] ?> | EMGA APP</title>
     <link rel="stylesheet" href="./../../style/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./../../style/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
 </head>
 
 <body>
@@ -36,9 +41,9 @@ if ($_SESSION["useretypeid"] != 1) {
                         <li class="nav-item">
                             <a class="nav-link " aria-current="page" href="./../accueil/accueil.php?title=Accueil">Accueil</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="./../../dorh/users/user_liste.php?title=Utilisateurs">Utilisateurs</a>
-                        </li>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link " href="./../../dorh/users/type_users.php?title=Utilisateur">Utilisateur</a>
+                        </div> 
                         <li class="nav-item">
                             <a class="nav-link " href="./../../dorh/cartes/divisions_tbl.php?title=Cartes d'accès">Cartes d'accès</a>
                         </li>
@@ -57,3 +62,4 @@ if ($_SESSION["useretypeid"] != 1) {
                 </div>
             </div>
         </nav>
+</div>
